@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="overlay hidden"></div>
+    <div class="header-wrapper">
+      <button class="difficulty">Difficulty</button>
+      <h1>Whack a mole</h1>
+      <button class="show-modal-description">i</button>
+    </div>
+    <div class="main-wrapper">
+      <div>
+        <div class="playerScore">
+          <div class="label">Score</div>
+          <p class="score"></p>
+        </div>
+        <button class="btn">START</button>
+      </div>
+      <div class="counter">0:<span class="count">20</span></div>
+      <div class="game-container">
+        <img class="mole m1 hidden" src="mole.png" />
+        <img class="mole m2 hidden" src="mole.png" />
+        <img class="mole m3 hidden" src="mole.png" />
+        <img class="mole m4 hidden" src="mole.png" />
+        <img class="mole m5 hidden" src="mole.png" />
+        <img class="mole m6 hidden" src="mole.png" />
+
+        <img class="dirt d1" src="dirt.png" />
+        <img class="dirt d2" src="dirt.png" />
+        <img class="dirt d3" src="dirt.png" />
+        <img class="dirt d4" src="dirt.png" />
+        <img class="dirt d5" src="dirt.png" />
+        <img class="dirt d6" src="dirt.png" />
+      </div>
+    </div>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1 class="modal-text mtext"></h1>
+      <hr class="line hidden" />
+      <div class="forDifficulty">
+        <a class="easy hidden">Easy</a>
+        <a class="hard hidden">Hard</a>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #444;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "Press Start 2P", sans-serif;
+  color: white;
+  line-height: 3rem;
+}
+
+.main-wrapper {
+  background-color: lightgray;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2rem;
+  height: 80vh;
+  width: 75%;
+  margin-top: 8rem;
+}
+
+.header-wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  top: 5%;
+  font-size: 15px;
+}
+
+.dirt {
+  position: absolute;
+  height: 80px;
+  width: 20%;
+}
+
+.mole {
+  position: absolute;
+  height: 150px;
+  width: 18%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d1 {
+  top: 40%;
+  left: 5%;
+}
+.d2 {
+  top: 40%;
+  left: 40%;
+}
+.d3 {
+  top: 40%;
+  left: 75%;
+}
+.d4 {
+  top: 70%;
+  left: 5%;
+}
+.d5 {
+  top: 70%;
+  left: 40%;
+}
+.d6 {
+  top: 70%;
+  left: 75%;
+}
+
+.m1 {
+  top: 25%;
+  left: 5%;
+}
+.m2 {
+  top: 25%;
+  left: 40%;
+}
+.m3 {
+  top: 25%;
+  left: 75%;
+}
+.m4 {
+  top: 55%;
+  left: 5%;
+}
+.m5 {
+  top: 55%;
+  left: 40%;
+}
+.m6 {
+  top: 55%;
+  left: 75%;
+}
+
+.hidden {
+  display: none;
+}
+
+.hide {
+  overflow: hidden;
+}
+.slideUp {
+  transform: translateY(100%);
+  transition: all 0.2s;
+}
+.slideDown {
+  transform: translateY(0%);
+  transition: all 0.2s;
+}
+.btn {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.dirt {
+  background-image: url("dirt.png");
+}
+
+.playerScore {
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 9px;
+  width: 30%;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.5s;
+  position: absolute;
+  left: 35%;
+  margin-top: 5px;
+}
+
+.score {
+  font-size: 3.5rem;
+}
+
+/* modal css */
+.show-modal-description {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background-color: #fff;
+  border-radius: 10rem;
+  cursor: pointer;
+  position: absolute;
+  left: 90%;
+}
+
+.modal {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: white;
+  color: #444 !important;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.mtext {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.difficulty {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background-color: #fff;
+  border-radius: 10rem;
+  cursor: pointer;
+  position: absolute;
+  right: 85%;
+  color: black;
+}
+
+.line {
+  margin-bottom: 20px;
+}
+
+.easy,
+.hard {
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 10rem;
+  cursor: pointer;
+  color: black;
+  width: 25%;
+  padding: 0.75rem 1.5rem;
+}
+
+.forDifficulty {
+  display: block;
+  text-align: center;
+}
+
+.active {
+  background-color: lightgray;
+}
+
+.counter {
+  color: black;
+  font-size: 3rem;
+  position: absolute;
+  top: 10%;
+  left: 85%;
+}
