@@ -115,7 +115,7 @@ difficulty.addEventListener("click", function () {
   //which button is clicked
   //easy clicked
   easy.addEventListener("click", function () {
-    time = 800;
+    time = 1000;
     if (!easy.classList.contains("active")) {
       easy.classList.add("active");
       if (hard.classList.contains("active")) {
@@ -125,7 +125,7 @@ difficulty.addEventListener("click", function () {
   });
   //hard clicked
   hard.addEventListener("click", function () {
-    time = 600;
+    time = 500;
     if (!hard.classList.contains("active")) {
       hard.classList.add("active");
       if (easy.classList.contains("active")) {
